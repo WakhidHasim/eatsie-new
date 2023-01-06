@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/tvHeading1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/sign_up"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/text_header"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvHeading2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/let_s_sign_up_to_your_account"
+        android:textColor="@color/text_header"
+        android:textSize="14sp"
+        android:fontFamily="@font/poppins_regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHeading1" />
+
+    <TextView
+        android:id="@+id/tvLabelFullNameRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/full_name"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/text_header"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHeading2" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilFormInputFullNameRegister"
+        style="@style/TextInputLayoutCustomStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custome_input"
+        app:boxBackgroundMode="none"
+        app:hintEnabled="false"
+        android:layout_marginHorizontal="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelFullNameRegister">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center_vertical"
+            android:hint="@string/input_your_full_name"
+            android:paddingStart="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="#757575"
+            tools:ignore="RtlSymmetry"
+            android:inputType="text"
+            android:autofillHints="Input Your Full Name" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvLabelEmailRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/email"
+        android:textColor="@color/text_header"
+        android:textSize="16sp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilFormInputFullNameRegister" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilFormInputEmailRegister"
+        style="@style/TextInputLayoutCustomStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custome_input"
+        app:boxBackgroundMode="none"
+        app:hintEnabled="false"
+        android:layout_marginHorizontal="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelEmailRegister">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center_vertical"
+            android:hint="@string/input_your_email"
+            android:paddingStart="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="#757575"
+            tools:ignore="RtlSymmetry"
+            android:inputType="textEmailAddress"
+            android:autofillHints="Input Your Email" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvLabelPasswordRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="24dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/password"
+        android:textColor="@color/text_header"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilFormInputEmailRegister" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilFormInputPasswordRegister"
+        style="@style/TextInputLayoutCustomStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custome_input"
+        app:boxBackgroundMode="none"
+        app:hintEnabled="false"
+        android:layout_marginHorizontal="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelPasswordRegister"
+        app:passwordToggleEnabled="true" >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center_vertical"
+            android:hint="@string/input_your_password"
+            android:paddingStart="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="#757575"
+            tools:ignore="RtlSymmetry"
+            android:inputType="textPassword"
+            android:autofillHints="Input Your Password" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvLabelConfirmPasswordRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="24dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/confirm_password"
+        android:textColor="@color/text_header"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilFormInputPasswordRegister" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilFormInputConfirmPasswordRegister"
+        style="@style/TextInputLayoutCustomStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custome_input"
+        app:boxBackgroundMode="none"
+        app:hintEnabled="false"
+        android:layout_marginHorizontal="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabelConfirmPasswordRegister"
+        app:passwordToggleEnabled="true" >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center_vertical"
+        android:hint="@string/confirm_your_password"
+        android:paddingStart="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#757575"
+        tools:ignore="RtlSymmetry"
+        android:inputType="textPassword"
+        android:autofillHints="Input Your Password" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="24dp"
+        android:background="@drawable/cutome_button"
+        android:elevation="5dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/sign_up"
+        android:textColor="@color/text_button"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilFormInputConfirmPasswordRegister"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/tvSignUpAnAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/or_use_an_account"
+        android:textColor="#666666"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignUp" />
+
+    <LinearLayout
+        android:id="@+id/llRegisterUsingGoogle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custome_button_google"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingVertical="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSignUpAnAccount"
+        tools:ignore="TouchTargetSizeCheck">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/google_icon"
+            android:src="@drawable/google_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/google"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llTextAlreadyHaveAnAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llRegisterUsingGoogle" >
+
+        <TextView
+            android:id="@+id/tvTextAlreadyHaveAnAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/already_have_an_account"
+            android:textColor="#CC000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvTextLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/login"
+            android:textColor="@color/orange"
+            android:textSize="14sp"
+            tools:ignore="TextContrastCheck" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
