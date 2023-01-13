@@ -156,48 +156,6 @@
             android:autofillHints="Input Your Password" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <TextView
-        android:id="@+id/tvLabelConfirmPasswordRegister"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_marginStart="24dp"
-        android:fontFamily="@font/poppins_medium"
-        android:text="@string/confirm_password"
-        android:textColor="@color/text_header"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tilFormInputPasswordRegister" />
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tilFormInputConfirmPasswordRegister"
-        style="@style/TextInputLayoutCustomStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/custome_input"
-        app:boxBackgroundMode="none"
-        app:hintEnabled="false"
-        android:layout_marginHorizontal="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvLabelConfirmPasswordRegister"
-        app:passwordToggleEnabled="true" >
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:color/transparent"
-        android:fontFamily="@font/poppins_medium"
-        android:gravity="center_vertical"
-        android:hint="@string/confirm_your_password"
-        android:paddingStart="10dp"
-        android:textColor="@color/black"
-        android:textColorHint="#757575"
-        tools:ignore="RtlSymmetry"
-        android:inputType="textPassword"
-        android:autofillHints="Input Your Password" />
-    </com.google.android.material.textfield.TextInputLayout>
-
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnSignUp"
         android:layout_width="match_parent"
@@ -214,7 +172,7 @@
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tilFormInputConfirmPasswordRegister"
+        app:layout_constraintTop_toBottomOf="@+id/tilFormInputPasswordRegister"
         tools:ignore="TextContrastCheck" />
 
     <TextView
